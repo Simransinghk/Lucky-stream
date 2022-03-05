@@ -40,37 +40,38 @@ from config import (
 async def start_set(_, query: CallbackQuery):
     await query.answer("home start")
     await query.edit_message_text(
-        f"""✨ **Welcome [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**\n
-💭 [{me_bot.first_name}](https://t.me/{BOT_USERNAME}) **Is a bot to play music and video in groups, through the Telegram Group video chat!**
+        f"""**━━━━━━━━━━━━━━━━━━
+🖤 ʜᴇʏ {message.from_user.mention()} !
 
-💡 **Find out all the Bot's commands and how they work by clicking on the » 📚 Commands button!**
+         ɪ ᴀᴍ sᴜᴘᴇʀ ғᴀsᴛ ᴠᴄ ᴘʟᴀʏᴇʀ ʙᴏᴛ ғᴏʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs...
+ᴀʟʟ ᴏꜰ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ : /
+┏━━━━━━━━━━━━━━┓
+┣★
+┣★ ᴄʀᴇᴀᴛᴏʀ: [🖤 ᴀʙʜɪᴍᴀɴʏᴜ 🖤](t.me/Itz_VeNom_xD)
+┣★
+┗━━━━━━━━━━━━━━┛
 
-🔖 **To know how to use this bot, please click on the » ❓ Basic Guide button!**""",
+💞 ɪғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs ᴛʜᴇɴ ᴅᴍ ᴛᴏ ᴍʏ [ᴏᴡɴᴇʀ](t.me/Itz_VeNom_xD) ʙᴀʙʏ...
+━━━━━━━━━━━━━━━━━━**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Add me to your Group ➕",
+                        "🖤   ᴋɪᴅɴᴀᴘ ᴍᴇ   🖤",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
-                [InlineKeyboardButton("❓ Basic Guide", callback_data="user_guide")],
                 [
-                    InlineKeyboardButton("📚 Commands", callback_data="command_list"),
-                    InlineKeyboardButton("❤ Donate", url=f"https://t.me/{OWNER_USERNAME}"),
+                    InlineKeyboardButton("🦋 ʜᴇʟᴘ ", callback_data="command_list"),
+                    InlineKeyboardButton("ᴏᴡɴᴇʀ 🦋", url=f"https://t.me/Itz_VeNom_xD"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "👥 Official Group", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "🖤 ᴏꜰꜰɪᴄɪᴀʟ ɢʀᴏᴜᴘ", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "📣 Official Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "ᴏꜰꜰɪᴄɪᴀʟ ᴄʜᴀɴɴᴇʟ 🖤", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
-                ],
-                [
-                    InlineKeyboardButton(
-                        "🌐 Source Code", url="https://github.com/levina-lab/video-stream"
-                    )
                 ],
             ]
         ),
