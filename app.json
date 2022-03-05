@@ -1,7 +1,7 @@
 {
-    "name": "Video x Music Stream Bot",
+    "name": "Lucky x Music Stream Bot",
     "description": "Telegram bot for Streaming Video & Music trought the Telegram Group Video Chat, powered by PyTgCalls and Pyrogram",
-    "logo": "https://telegra.ph/file/1c41ded2dd871eb36bd7e.png",
+    "logo": "https://telegra.ph/file/3f09576ad17907503d2fc.jpg",
     "keywords": [
         "py-tgcalls",
         "telegram bot",
@@ -11,9 +11,9 @@
         "mongodb",
         "pyrogram"
     ],
-    "website": "https://t.me/levinachannel",
+    "website": "https://t.me/cute_boy701",
     "repository": "https://github.com/LuckyXD12/video-stream",
-    "success_url": "https://t.me/dlwrml",
+    "success_url": "https://t.me/cute_boy701",
     "env": {
         "API_ID": {
             "description": "your API_ID from my.telegram.org",
