@@ -296,7 +296,7 @@ async def vplay(c: Client, m: Message):
                             await m.reply_photo(
                                 photo=image,
                                 reply_markup=InlineKeyboardMarkup(buttons),
-                                caption=f"💡 **Track added to queue »** `{pos}`\n\n🗂 **Name:** [{songname}]({url}) | `video`\n⏱ **Duration:** `{duration}`\n🧸 **Request by:** {requester}",
+                                caption=f"💡 **Tʀᴀᴄᴋ ᴀᴅᴅᴇᴅ ᴛᴏ Qᴜᴇᴜᴇ »** `{pos}`\n\n🎧 **Nᴀᴍᴇ:** [{songname}]({url}) | `video`\n⏱ **Dᴜʀᴀᴛɪᴏɴ:** `{duration}`\n🧸 **ʀᴇQᴜᴇꜱᴛᴇᴅ ʙʏ:** {requester}",
                             )
                             remove_if_exists(image)
                         else:
@@ -320,7 +320,7 @@ async def vplay(c: Client, m: Message):
                                 await m.reply_photo(
                                     photo=image,
                                     reply_markup=InlineKeyboardMarkup(buttons),
-                                    caption=f"🗂 **Name:** [{songname}]({url}) | `video`\n⏱ **Duration:** `{duration}`\n🧸 **Request by:** {requester}",
+                                    caption=f"🎧 **ɴᴀᴍᴇ:** [{songname}]({url}) | `video`\n⏱ **Dᴜʀᴀᴛɪᴏɴ:** `{duration}`\n🧸 **ʀᴇQᴜᴇꜱᴛᴇᴅ ʙʏ:** {requester}",
                                 )
                                 remove_if_exists(image)
                             except (NoActiveGroupCall, GroupCallNotFound):
