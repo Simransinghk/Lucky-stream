@@ -270,7 +270,7 @@ async def play(c: Client, m: Message):
                             await m.reply_photo(
                                 photo=image,
                                 reply_markup=InlineKeyboardMarkup(buttons),
-                                caption=f"💡 **Track added to queue »** `{pos}`\n\n🗂 **Name:** [{songname}]({url}) | `music`\n**⏱ Duration:** `{duration}`\n🧸 **Request by:** {requester}",
+                                caption=f"💡 **ᴛʀᴀᴄᴋ ᴀᴅᴅᴇᴅ ᴛᴏ Qᴜᴇᴜᴇ »** `{pos}`\n\n🎧 **ɴᴀᴍᴇ:** [{songname}]({url}) | `music`\n**⏱ ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\n🧸 **ʀᴇQᴜᴇꜱᴛᴇᴅ ʙʏ:** {requester}",
                             )
                             remove_if_exists(image)
                         else:
@@ -295,7 +295,7 @@ async def play(c: Client, m: Message):
                                 await m.reply_photo(
                                     photo=image,
                                     reply_markup=InlineKeyboardMarkup(buttons),
-                                    caption=f"🗂 **Name:** [{songname}]({url}) | `music`\n**⏱ Duration:** `{duration}`\n🧸 **Request by:** {requester}",
+                                    caption=f"🎧 **ɴᴀᴍᴇ:** [{songname}]({url}) | `music`\n**⏱ ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\n🧸 **ʀᴇQᴜᴇꜱᴛᴇᴅ ʙʏ:** {requester}",
                                 )
                                 remove_if_exists(image)
                             except (NoActiveGroupCall, GroupCallNotFound):
@@ -348,7 +348,7 @@ async def play(c: Client, m: Message):
                         await m.reply_photo(
                             photo=image,
                             reply_markup=InlineKeyboardMarkup(buttons),
-                            caption=f"💡 **Track added to queue »** `{pos}`\n\n🗂 **Name:** [{songname}]({url}) | `music`\n**⏱ Duration:** `{duration}`\n🧸 **Request by:** {requester}",
+                            caption=f"💡 **Tʀᴀᴄᴋ ᴀᴅᴅᴇᴅ ᴛᴏ Qᴜᴇᴜᴇ »** `{pos}`\n\n🎧 **ɴᴀᴍᴇ:** [{songname}]({url}) | `music`\n**⏱ Dᴜʀᴀᴛɪᴏɴ:** `{duration}`\n🧸 **RᴇQᴜᴇꜱᴛᴇᴅ ʙʏ:** {requester}",
                         )
                         remove_if_exists(image)
                     else:
@@ -371,7 +371,7 @@ async def play(c: Client, m: Message):
                             await m.reply_photo(
                                 photo=image,
                                 reply_markup=InlineKeyboardMarkup(buttons),
-                                caption=f"🗂 **Name:** [{songname}]({url}) | `music`\n**⏱ Duration:** `{duration}`\n🧸 **Request by:** {requester}",
+                                caption=f"🎧 **Nᴀᴍᴇ:** [{songname}]({url}) | `music`\n**⏱ Dᴜʀᴀᴛɪᴏɴ:** `{duration}`\n🧸 **ʀᴇQᴜᴇꜱᴛᴇᴅ ʙʏ:** {requester}",
                             )
                             remove_if_exists(image)
                         except (NoActiveGroupCall, GroupCallNotFound):
