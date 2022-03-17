@@ -124,7 +124,7 @@ async def play_tg_file(c: Client, m: Message, replied: Message = None, link: str
             ctitle = await CHAT_TITLE(gcname)
             title = songname
             userid = m.from_user.id
-            image = await thumb(videoid)
+            image = await thumb(thumb)
             pos = add_to_queue(chat_id, songname, dl, link, "music", 0)
             requester = f"[{m.from_user.first_name}](tg://user?id={m.from_user.id})"
             buttons = stream_markup(user_id)
@@ -144,7 +144,7 @@ async def play_tg_file(c: Client, m: Message, replied: Message = None, link: str
                 ctitle = await CHAT_TITLE(gcname)
                 title = songname
                 userid = m.from_user.id
-                image = await thumb(videoid)
+                image = await thumb(thumb)
                 await suhu.edit("🔄 Joining Group Call...")
                 await music_on(chat_id)
                 await add_active_chat(chat_id)
@@ -255,7 +255,7 @@ async def audio_stream(c: Client, m: Message):
                     userid = m.from_user.id
                     gcname = m.chat.title
                     ctitle = await CHAT_TITLE(gcname)
-                    image = await thumb(videoid)
+                    image = await thumb(thumb)
                     out, ytlink = await ytdl(url)
                     if out == 0:
                         await suhu.edit(f"❌ yt-dl issues detected\n\n» `{ytlink}`")
@@ -332,7 +332,7 @@ async def audio_stream(c: Client, m: Message):
                 userid = m.from_user.id
                 gcname = m.chat.title
                 ctitle = await CHAT_TITLE(gcname)
-                image = await thumb(videoid)
+                image = await thumb(thumb)
                 veez, ytlink = await ytdl(url)
                 if veez == 0:
                     await suhu.edit(f"❌ yt-dl issues detected\n\n» `{ytlink}`")
@@ -496,7 +496,7 @@ async def live_music_stream(c: Client, m: Message):
                 userid = m.from_user.id
                 gcname = m.chat.title
                 ctitle = await CHAT_TITLE(gcname)
-                image = await thumb(videoid)
+                image = await thumb(thumb)
                 if chat_id in QUEUE:
                     await msg.edit_text("🔄 Queueing Track...")
                     pos = add_to_queue(chat_id, songname, data, url, "music", 0)
