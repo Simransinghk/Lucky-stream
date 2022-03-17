@@ -129,8 +129,3 @@ async def gen_thumb(videoid):
             (255, 255, 255),
             font=arial,
         )
-    img.save(f"search/final{userid}.png")
-    os.remove(f"search/temp{userid}.png")
-    os.remove(img_path)
-    final = f"search/final{userid}.png"
-    return final
