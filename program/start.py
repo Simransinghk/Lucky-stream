@@ -161,7 +161,7 @@ async def alive(c: Client, message: Message):
 async def help(client: Client, message: Message):
     await message.reply_sticker("CAACAgUAAxkBAAEENxZiNtPdibVkMsjLZrUG9NK4hotHQgAC2wEAAoM12VSdN9ujxVtnUyME")
     await message.reply_photo(
-        photo="https://telegra.ph/file/89cbc8b8760b6abff430f.jpg",
+        photo="https://telegra.ph/file/9a2862d2b5e9e48f11836.jpg",
         caption=f"""<b>🏓 ᴩᴏɴɢ ʙᴀʙʏ !</b>""",
         reply_markup=InlineKeyboardMarkup(
             [
