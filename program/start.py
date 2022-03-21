@@ -93,7 +93,7 @@ async def start_(c: Client, message: Message):
 ᴀʟʟ ᴏꜰ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ : /
 ┏━━━━━━━━━━━━━━┓
 ┣★
-┣★ ᴄʀᴇᴀᴛᴏʀ: [🖤 ᴀʙʜɪᴍᴀɴʏᴜ 🖤](t.me/Itz_VeNom_xD)
+┣★ ᴄʀᴇᴀᴛᴏʀ: [🖤 𝐋𝐔𝐂𝐊𝐘 🖤](t.me/cute_boy701)
 ┣★
 ┗━━━━━━━━━━━━━━┛
 
@@ -109,7 +109,7 @@ async def start_(c: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton("🦋 ʜᴇʟᴘ ", callback_data="command_list"),
-                    InlineKeyboardButton("ᴏᴡɴᴇʀ 🦋", url=f"https://t.me/Itz_VeNom_xD"),
+                    InlineKeyboardButton("ᴏᴡɴᴇʀ 🦋", url=f"https://t.me/cute_boy701"),
                 ],
                 [
                     InlineKeyboardButton(
