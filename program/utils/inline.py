@@ -10,10 +10,10 @@ from pyrogram.types import (
 def stream_markup(user_id):
   buttons = [
         [
-            InlineKeyboardButton("II", callback_data="pause"),
-            InlineKeyboardButton("▷", callback_data="resume"),
-            InlineKeyboardButton("‣‣I", callback_data="skip"),
-            InlineKeyboardButton("▢", callback_data="end"),
+            InlineKeyboardButton("II", callback_data=f'set_pause | {user_id}'),
+            InlineKeyboardButton("▷", callback_data=f'set_resume | {user_id}'),
+            InlineKeyboardButton("‣‣I", callback_data=f'set_skip | {user_id}'),
+            InlineKeyboardButton("▢", callback_data=f'set_stop | {user_id}'),
         ],
         [
             InlineKeyboardButton("𓆩🖤❛ 𝐋𝐮𝐜𝐤𝐲 ♕︎ 𝐖𝐨𝐫𝐥𝐝᭄ ❜🖤𓆪", url=f"https://t.me/terayaarhoomai")
