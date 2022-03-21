@@ -37,11 +37,10 @@ async def thumb(thumbnail, title, userid, ctitle):
     else:
         img_path = thumbnail
     image1 = Image.open(img_path)
-    image3 = changeImageSize(1280, 720, image1)
-    image4 = changeImageSize(1280, 720, image2)
-    image5 = image3.convert("RGBA")
-    image6 = image4.convert("RGBA")
-    Image.alpha_composite(image5, image6).save(f"search/temp{userid}.png")
+    image2 = changeImageSize(1280, 720, image1)
+    image3 = image2.convert("RGBA")
+    image4 = image3.convert("RGBA")
+    Image.alpha_composite(image3, image4).save(f"search/temp{userid}.png")
     img = Image.open(f"search/temp{userid}.png")
     draw = ImageDraw.Draw(img)
     font = ImageFont.truetype("driver/source/regular.ttf", 50)
