@@ -294,7 +294,7 @@ async def video_stream(c: Client, m: Message):
                             await m.reply_photo(
                                 photo=image,
                                 reply_markup=InlineKeyboardMarkup(buttons),
-                                caption=f"💡 **Track added to queue »** `{pos}`\n\n🗂 **Name:** [{songname}]({url}) | `video`\n⏱ **Duration:** `{duration}`\n🧸 **Request by:** {requester}",
+                                caption=f"📍 **ᴛʀᴀᴄᴋ ᴀᴅᴅᴇᴅ ᴛᴏ Qᴜᴇᴜᴇ »** `{pos}`\n\n📌 **ᴛɪᴛʟᴇ:** [{songname}]({url}) | `ᴍᴜꜱɪᴄ`\n**🕛 ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\😘 **ᴀᴅᴅᴇᴅ ʙʏ:** {requester}",
                             )
                             remove_if_exists(image)
                         else:
@@ -318,7 +318,7 @@ async def video_stream(c: Client, m: Message):
                                 await m.reply_photo(
                                     photo=image,
                                     reply_markup=InlineKeyboardMarkup(buttons),
-                                    caption=f"🗂 **Name:** [{songname}]({url}) | `video`\n⏱ **Duration:** `{duration}`\n🧸 **Request by:** {requester}",
+                                    caption=f"📌 **ᴛɪᴛʟᴇ:** [{songname}]({url}) | `ᴍᴜꜱɪᴄ`\n**🕛 ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\😘 **ᴀᴅᴅᴇᴅ ʙʏ:** {requester}",
                                 )
                                 remove_if_exists(image)
                             except (NoActiveGroupCall, GroupCallNotFound):
@@ -373,7 +373,7 @@ async def video_stream(c: Client, m: Message):
                         await m.reply_photo(
                             photo=image,
                             reply_markup=InlineKeyboardMarkup(buttons),
-                            caption=f"💡 **Track added to queue »** `{pos}`\n\n🗂 **Name:** [{songname}]({url}) | `video`\n⏱ **Duration:** `{duration}`\n🧸 **Request by:** {requester}",
+                            caption=f"📍 **ᴛʀᴀᴄᴋ ᴀᴅᴅᴇᴅ ᴛᴏ Qᴜᴇᴜᴇ »** `{pos}`\n\n📌 **ᴛɪᴛʟᴇ:** [{songname}]({url}) | `ᴍᴜꜱɪᴄ`\n**🕛 ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\😘 **ᴀᴅᴅᴇᴅ ʙʏ:** {requester}",
                         )
                         remove_if_exists(image)
                     else:
@@ -397,7 +397,7 @@ async def video_stream(c: Client, m: Message):
                             await m.reply_photo(
                                 photo=image,
                                 reply_markup=InlineKeyboardMarkup(buttons),
-                                caption=f"🗂 **Name:** [{songname}]({url}) | `video`\n⏱ **Duration:** `{duration}`\n🧸 **Request by:** {requester}",
+                                caption=f"📌 **ᴛɪᴛʟᴇ:** [{songname}]({url}) | `ᴍᴜꜱɪᴄ`\n**🕛 ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\😘 **ᴀᴅᴅᴇᴅ ʙʏ:** {requester}",
                             )
                             remove_if_exists(image)
                         except (NoActiveGroupCall, GroupCallNotFound):
@@ -569,7 +569,7 @@ async def live_video_stream(c: Client, m: Message):
                     await m.reply_photo(
                         photo=image,
                         reply_markup=InlineKeyboardMarkup(buttons),
-                        caption=f"💡 **Track added to queue »** `{pos}`\n\n🗂 **Name:** [{songname}]({url}) | `live`\n🧸 **Requested by:** {requester}",
+                        caption=f"📍 **ᴛʀᴀᴄᴋ ᴀᴅᴅᴇᴅ ᴛᴏ Qᴜᴇᴜᴇ »** `{pos}`\n\n📌 **ᴛɪᴛʟᴇ:** [{songname}]({url}) | `ᴍᴜꜱɪᴄ`\n**🕛 ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\😘 **ᴀᴅᴅᴇᴅ ʙʏ:** {requester}",
                     )
                     remove_if_exists(image)
                 else:
@@ -599,7 +599,7 @@ async def live_video_stream(c: Client, m: Message):
                         await m.reply_photo(
                             photo=image,
                             reply_markup=InlineKeyboardMarkup(buttons),
-                            caption=f"🗂 **Name:** [{songname}]({url}) | `live`\n🧸 **Requested by:** {requester}",
+                            caption=f"📌 **ᴛɪᴛʟᴇ:** [{songname}]({url}) | `ᴍᴜꜱɪᴄ`\n**🕛 ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\😘 **ᴀᴅᴅᴇᴅ ʙʏ:** {requester}",
                         )
                         remove_if_exists(image)
                     except (NoActiveGroupCall, GroupCallNotFound):
