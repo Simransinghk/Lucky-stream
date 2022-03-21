@@ -158,11 +158,27 @@ async def alive(c: Client, message: Message):
 
 @Client.on_message(command(["ping", f"ping@{BOT_USERNAME}"]) & ~filters.edited)
 @check_blacklist()
-async def ping_pong(c: Client, message: Message):
-    start = time()
-    m_reply = await message.reply_text("pinging...")
-    delta_ping = time() - start
-    await m_reply.edit_text("🌸 `ᴘᴏɴɢ!!`\n" f"⚡️ `{delta_ping * 1000:.3f} ms`")
+async def help(client: Client, message: Message):
+    await message.reply_sticker("CAACAgUAAxkBAAEENxZiNtPdibVkMsjLZrUG9NK4hotHQgAC2wEAAoM12VSdN9ujxVtnUyME")
+    await message.reply_photo(
+        photo="https://telegra.ph/file/89cbc8b8760b6abff430f.jpg",
+        caption=f"""<b>🏓 ᴩᴏɴɢ ʙᴀʙʏ !</b>""",
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "💖 sᴜᴘᴘᴏʀᴛ 💖", url=f"https://t.me/terayaarhoomai"
+                    ),
+                    InlineKeyboardButton(
+                        "🙄 sᴏᴜʀᴄᴇ 🙄", url="https://t.me/terayaarhoomai"
+                    )
+                ],[ 
+                    InlineKeyboardButton(
+                        "🥺 ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ 🥺", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"
+                    )]
+            ]
+        ),
+    )
 
 
 @Client.on_message(command(["uptime", f"uptime@{BOT_USERNAME}"]) & ~filters.edited)
