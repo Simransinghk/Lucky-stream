@@ -37,7 +37,6 @@ async def thumb(thumbnail, title, userid, ctitle):
     else:
         img_path = thumbnail
     image1 = Image.open(img_path)
-    image2 = Image.open("driver/source/LightGreen.png")
     image3 = changeImageSize(1280, 720, image1)
     image4 = changeImageSize(1280, 720, image2)
     image5 = image3.convert("RGBA")
@@ -47,18 +46,6 @@ async def thumb(thumbnail, title, userid, ctitle):
     draw = ImageDraw.Draw(img)
     font = ImageFont.truetype("driver/source/regular.ttf", 50)
     font2 = ImageFont.truetype("driver/source/medium.ttf", 72)
-    draw.text(
-        (25, 615),
-        f"{title[:20]}...",
-        fill="black",
-        font=font2,
-    )
-    draw.text(
-        (27, 543),
-        f"Playing on {ctitle[:12]}",
-        fill="black",
-        font=font,
-    )
     img.save(f"search/final{userid}.png")
     os.remove(f"search/temp{userid}.png")
     os.remove(img_path)
