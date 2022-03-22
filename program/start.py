@@ -170,7 +170,7 @@ async def ping(_, message):
     end = datetime.now()
     resp = (end - start).microseconds / 1000
     await response.edit_text(
-        f"**💐 ᴘᴏɴɢ**\n`⚡{resp} ᴍs`\n\n**{MUSIC_BOT_NAME} sʏsᴛᴇᴍ sᴛᴀᴛs:**{uptime}"
+        f"**💐 ᴘᴏɴɢ**\n`⚡{resp} ᴍs`\n\n**{me_bot.first_name} sʏsᴛᴇᴍ sᴛᴀᴛs:**{uptime}"
     )
 
 
