@@ -158,26 +158,17 @@ async def alive(c: Client, message: Message):
 
 @Client.on_message(command(["ping", f"ping@{BOT_USERNAME}"]) & ~filters.edited)
 @check_blacklist()
-async def help(client: Client, message: Message):
-    await message.reply_sticker("CAACAgUAAxkBAAEENxZiNtPdibVkMsjLZrUG9NK4hotHQgAC2wEAAoM12VSdN9ujxVtnUyME")
-    await message.reply_photo(
-        photo="https://telegra.ph/file/9a2862d2b5e9e48f11836.jpg",
-        caption=f"""<b>🏓 ᴩᴏɴɢ ʙᴀʙʏ !</b>""",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        "💖 sᴜᴘᴘᴏʀᴛ 💖", url=f"https://t.me/terayaarhoomai"
-                    ),
-                    InlineKeyboardButton(
-                        "🙄 sᴏᴜʀᴄᴇ 🙄", url="https://t.me/terayaarhoomai"
-                    )
-                ],[ 
-                    InlineKeyboardButton(
-                        "🥺 ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ 🥺", url=f"https://t.me/{BOT_USERNAME}?startgroup=true"
-                    )]
-            ]
-        ),
+async def ping(_, message):
+    start = datetime.now()
+    response = await message.reply_photo(
+        photo=f"https://telegra.ph/file/3f09576ad17907503d2fc.jpg",
+        caption="🌸 ᴘɪɴɢ...",
+    )
+    uptime = await bot_sys_stats()
+    end = datetime.now()
+    resp = (end - start).microseconds / 1000
+    await response.edit_text(
+        f"**💐 ᴘᴏɴɢ**\n`⚡{resp} ᴍs`\n\n**{MUSIC_BOT_NAME} sʏsᴛᴇᴍ sᴛᴀᴛs:**{uptime}"
     )
 
 
