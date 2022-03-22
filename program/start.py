@@ -164,7 +164,7 @@ async def ping(_, message):
         photo=f"https://telegra.ph/file/3f09576ad17907503d2fc.jpg",
         caption="🌸 ᴘɪɴɢ...",
     )
-    uptime = await bot_sys_stats()
+    uptime = await _human_time_duration(int(uptime_sec))
     end = datetime.now()
     resp = (end - start).microseconds / 1000
     await response.edit_text(
