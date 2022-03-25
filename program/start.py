@@ -76,7 +76,6 @@ async def _human_time_duration(seconds):
 
 @Client.on_message(command("start") & filters.private & ~filters.group & ~filters.edited)
 async def start_(client: Client, message: Message):
-    await message.reply_sticker("CAACAgUAAxkBAAEENxZiNtPdibVkMsjLZrUG9NK4hotHQgAC2wEAAoM12VSdN9ujxVtnUyME")
     await message.reply_photo(
         photo=f"https://telegra.ph/file/89cbc8b8760b6abff430f.jpg",
         caption=f"""**━━━━━━━━━━━━━━━━━━
