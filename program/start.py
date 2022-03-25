@@ -86,7 +86,7 @@ async def start_(c: Client, message: Message):
         await add_served_user(user_id)
         return
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/bc090073207228faacbd1.jpg",)
+        photo=f"https://te.legra.ph/file/bc090073207228faacbd1.jpg")
     await message.reply_text(
         f"""**━━━━━━━━━━━━━━━━━━  
 🖤 ʜᴇʏ {message.from_user.mention()} !
