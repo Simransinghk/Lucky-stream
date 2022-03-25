@@ -296,7 +296,7 @@ async def audio_stream(c: Client, m: Message):
                                 await m.reply_photo(
                                     photo=image,
                                     reply_markup=InlineKeyboardMarkup(buttons),
-                                    caption=f"📌 **ᴛɪᴛʟᴇ:** [{songname}]({url}) | `ᴍᴜꜱɪᴄ`\n**🕛 ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\n😘 **ᴀᴅᴅᴇᴅ ʙʏ:** {requester}",
+                                    caption=f"",
                                 )
                                 remove_if_exists(image)
                             except (NoActiveGroupCall, GroupCallNotFound):
@@ -346,7 +346,7 @@ async def audio_stream(c: Client, m: Message):
                         await m.reply_photo(
                             photo=image,
                             reply_markup=InlineKeyboardMarkup(buttons),
-                            caption=f"📍 **ᴛʀᴀᴄᴋ ᴀᴅᴅᴇᴅᴛᴏ Qᴜᴇᴜᴇ »** `{pos}`\n\n📌 **ᴛɪᴛʟᴇ:** [{songname}]({url}) | `ᴍᴜꜱɪᴄ`\n**🕛 ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\n😘 **ᴀᴅᴅᴇᴅ ʙʏ:** {requester}",
+                            caption=f"",
                         )
                         remove_if_exists(image)
                     else:
@@ -369,7 +369,7 @@ async def audio_stream(c: Client, m: Message):
                             await m.reply_photo(
                                 photo=image,
                                 reply_markup=InlineKeyboardMarkup(buttons),
-                                caption=f"📌 **ᴛɪᴛʟᴇ:** [{songname}]({url}) | `ᴍᴜꜱɪᴄ`\n**🕛 ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\n😘 **ᴀᴅᴅᴇᴅ ʙʏ:** {requester}",
+                                caption=f"",
                             )
                             remove_if_exists(image)
                         except (NoActiveGroupCall, GroupCallNotFound):
@@ -478,7 +478,7 @@ async def live_music_stream(c: Client, m: Message):
                         await m.reply_photo(
                             photo=f"{IMG_2}",
                             reply_markup=InlineKeyboardMarkup(buttons),
-                            caption=f"📌 **Name:** [m3u8 audio stream]({url}) | `live`\n🧸 **Requested by:** {requester}",
+                            caption=f"",
                         )
                     except (NoActiveGroupCall, GroupCallNotFound):
                         await msg.delete()
@@ -506,7 +506,7 @@ async def live_music_stream(c: Client, m: Message):
                     await m.reply_photo(
                         photo=image,
                         reply_markup=InlineKeyboardMarkup(buttons),
-                        caption=f"📍 **ᴛʀᴀᴄᴋ ᴀᴅᴅᴇᴅ ᴛᴏ Qᴜᴇᴜᴇ »** `{pos}`\n\n📌 **ᴛɪᴛʟᴇ:** [{songname}]({url}) | `ʟɪᴠᴇ`\😘 **ᴀᴅᴅᴇᴅ ʙʏ:** {requester}",
+                        caption=f"",
                     )
                     remove_if_exists(image)
                 else:
@@ -529,7 +529,7 @@ async def live_music_stream(c: Client, m: Message):
                         await m.reply_photo(
                             photo=image,
                             reply_markup=InlineKeyboardMarkup(buttons),
-                            caption=f"📌 **ᴛɪᴛʟᴇ:** [{songname}]({url}) | `ʟɪᴠᴇ`\n😘 **ᴀᴅᴅᴇᴅ ʙʏ:** {requester}",
+                            caption=f"",
                         )
                         remove_if_exists(image)
                     except (NoActiveGroupCall, GroupCallNotFound):
