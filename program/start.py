@@ -85,8 +85,10 @@ async def start_(c: Client, message: Message):
     else:
         await add_served_user(user_id)
         return
+    await message.reply_photo(
+        photo=f"https://telegra.ph/file/89cbc8b8760b6abff430f.jpg",
     await message.reply_text(
-        f"""**━━━━━━━━━━━━━━━━━━  (https://te.legra.ph/file/276f22acc0429886b79dc.jpg)\n
+        f"""**━━━━━━━━━━━━━━━━━━  
 🖤 ʜᴇʏ {message.from_user.mention()} !
 
          ɪ ᴀᴍ sᴜᴘᴇʀ ғᴀsᴛ ᴠᴄ ᴘʟᴀʏᴇʀ ʙᴏᴛ ғᴏʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs...
