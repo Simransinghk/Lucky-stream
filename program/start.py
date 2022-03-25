@@ -74,11 +74,22 @@ async def _human_time_duration(seconds):
     return ", ".join(parts)
 
 
-@Client.on_message(command("start") & filters.private & ~filters.group & ~filters.edited)
-async def start_(client: Client, message: Message):
+@Client.on_message(
+    command(["start", f"start@{BOT_USERNAME}"]) & filters.private & ~filters.edited
+)
+@check_blacklist()
+async def start_(c: Client, message: Message):
+    user_id = message.from_user.id
+    if await is_served_user(user_id):
+        pass
+    else:
+        await add_served_user(user_id)
+        return
     await message.reply_photo(
-        photo=f"https://telegra.ph/file/89cbc8b8760b6abff430f.jpg",
-        caption=f"""**━━━━━━━━━━━━━━━━━━
+        photo=f"https://telegra.ph/file/89cbc8b8760b6abff430f.jpg",)
+
+    await message.reply_text(
+        f"""**━━━━━━━━━━━━━━━━━━  
 🖤 ʜᴇʏ {message.from_user.mention()} !
 
          ɪ ᴀᴍ sᴜᴘᴇʀ ғᴀsᴛ ᴠᴄ ᴘʟᴀʏᴇʀ ʙᴏᴛ ғᴏʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs...
