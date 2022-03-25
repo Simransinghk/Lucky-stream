@@ -86,7 +86,7 @@ async def start_(c: Client, message: Message):
         await add_served_user(user_id)
         return
     await message.reply_text(
-        f"""**━━━━━━━━━━━━━━━━━━ [!](https://te.legra.ph/file/276f22acc0429886b79dc.jpg)\n
+        f"""**━━━━━━━━━━━━━━━━━━  (https://te.legra.ph/file/276f22acc0429886b79dc.jpg)\n
 🖤 ʜᴇʏ {message.from_user.mention()} !
 
          ɪ ᴀᴍ sᴜᴘᴇʀ ғᴀsᴛ ᴠᴄ ᴘʟᴀʏᴇʀ ʙᴏᴛ ғᴏʀ ᴛᴇʟᴇɢʀᴀᴍ ɢʀᴏᴜᴘs...
