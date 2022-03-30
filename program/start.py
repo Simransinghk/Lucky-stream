@@ -86,7 +86,7 @@ async def start_(c: Client, message: Message):
         await add_served_user(user_id)
         return
     await message.reply_photo(
-        photo=f"https://te.legra.ph/file/bc090073207228faacbd1.jpg")
+        photo=f"https://telegra.ph/file/abbceffab5eeeeec1cd50.jpg")
     await message.reply_text(
         f"""**━━━━━━━━━━━━━━━━━━  
 🖤 ʜᴇʏ {message.from_user.mention()} !
@@ -95,7 +95,7 @@ async def start_(c: Client, message: Message):
 ᴀʟʟ ᴏꜰ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ : /
 ┏━━━━━━━━━━━━━━┓
 ┣★
-┣★ ᴄʀᴇᴀᴛᴏʀ: [🖤 SIMMU 🖤](t.me/bad_munda_13)
+┣★ ᴄʀᴇᴀᴛᴏʀ: [🖤 𝐒𝐢𝐦𝐦𝐮 🖤](t.me/bad_munda_13)
 ┣★
 ┗━━━━━━━━━━━━━━┛
 
