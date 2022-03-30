@@ -46,7 +46,7 @@ async def start_set(_, query: CallbackQuery):
 ᴀʟʟ ᴏꜰ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ : /
 ┏━━━━━━━━━━━━━━┓
 ┣★
-┣★ ᴄʀᴇᴀᴛᴏʀ: [🖤 𝐋𝐔𝐂𝐊𝐘 🖤](t.me/cute_boy701)
+┣★ ᴄʀᴇᴀᴛᴏʀ: [🖤 𝐒𝐢𝐦𝐦𝐮 🖤](t.me/bad_munda_13)
 ┣★
 ┗━━━━━━━━━━━━━━┛
 
@@ -62,7 +62,7 @@ async def start_set(_, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton("🦋 ʜᴇʟᴘ ", callback_data="command_list"),
-                    InlineKeyboardButton("ᴏᴡɴᴇʀ 🦋", url=f"https://t.me/cute_boy701"),
+                    InlineKeyboardButton("ᴏᴡɴᴇʀ 🦋", url=f"https://t.me/bad_munda_13"),
                 ],
                 [
                     InlineKeyboardButton(
